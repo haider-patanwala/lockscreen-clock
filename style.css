@@ -1,0 +1,243 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #c0f5ff;
+	height: 100vh;
+	display: flex;
+	z-index: -9;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 700px;
+	width: 350px;
+	border-radius: 34px;
+	margin-bottom: 10px;
+	background-color: rgb(182, 217, 255);
+	background-image: url(https://images.pexels.com/photos/5412405/pexels-photo-5412405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	border: 15px solid rgb(0, 0, 0);
+	box-shadow: 0 0 90px #526769;
+}
+.top {
+	width: 1005;
+	height: 49px;
+	display: grid;
+	grid-template-columns: auto 50% auto auto auto;
+	align-items: center;
+}
+.camera-cutout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 23px;
+	margin-right: 7px;
+}
+.camera-top {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 30px;
+	width: 30px;
+	border-radius: 30px;
+	background-color: black;
+}
+
+.network-name {
+	margin-left: 22px;
+	font-size: 20px;
+	font-weight: 600;
+	color: rgb(0, 0, 0);
+}
+.wifi {
+	margin-left: 2px;
+}
+.network {
+	margin-left: 5px;
+}
+.battey {
+	margin-left: 3px;
+}
+.display-digital {
+	margin-top: 20px;
+	height: 20%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.lock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+.lock-size {
+	font-size: 30px;
+}
+.main-dg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dg-font {
+	font-size: 40px;
+	font-weight: 300;
+}
+.day-night {
+	margin-top: 15px;
+	font-size: 23px;
+	font-weight: 100;
+}
+.date-day {
+	margin-top: 15px;
+}
+.font-size {
+	font-size: 30px;
+	font-weight: 200;
+}
+.analog-clock {
+	margin-top: 24px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+.clock {
+	height: 240px;
+	width: 240px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-color: rgba(240, 248, 255, 0.652);
+
+	border-style: solid;
+	border-width: 5px;
+	box-shadow: inset 0 0 9px rgb(0, 38, 61);
+	backdrop-filter: blur(10px);
+}
+.nums {
+	position: absolute;
+	transform: rotate(calc(30deg * var(--number)));
+	inset: 12px;
+	text-align: center;
+}
+b {
+	transform: rotate(calc(-30deg * var(--number)));
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 300;
+	color: rgb(0, 0, 0);
+}
+.hr-hand {
+	width: 9px;
+	border-radius: 5px;
+	height: 68px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	top: 23%;
+	left: 48%;
+	transform-origin: bottom;
+	z-index: 9999;
+}
+.sec-hand {
+	width: 3px;
+	border-radius: 8px;
+	height: 85px;
+	background-color: black;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: rotate(90deg);
+	transform-origin: bottom;
+	z-index: 9999;
+}
+.sec-hand::before {
+	content: "";
+	width: 3px;
+	border-radius: 8px;
+	height: 48px;
+	background-color: black;
+	position: absolute;
+	bottom: -26px;
+	transform-origin: bottom;
+	z-index: 9999;
+}
+.min-hand {
+	width: 5px;
+	border-radius: 8px;
+	height: 69px;
+	background-color: #02cae0;
+	position: absolute;
+	top: 22%;
+	left: 49%;
+	transform-origin: bottom;
+	z-index: 9999;
+}
+.button {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: black;
+	position: absolute;
+	z-index: 99999;
+	box-shadow: 0 0 0px black;
+}
+.light {
+	margin-top: 80px;
+	padding-left: 10px;
+	display: flex;
+	width: 95%;
+	justify-content: space-between;
+}
+.light-icons {
+	font-size: 24px;
+}
+.light-icam {
+	font-size: 24px;
+	margin-left: 30px;
+}
+.light-ic {
+	font-size: 24px;
+	margin-left: 12px;
+}
+.fingerprint {
+	margin-top: 50px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.fingerprint-svg {
+	border-radius: 50%;
+	backdrop-filter: blur(10px);
+	background-color: rgba(240, 248, 255, 0.314);
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.camera {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 12px;
+}
+.name-ic {
+	color: rgb(255, 255, 255);
+}
+.spa {
+	height: 5px;
+	width: 6px;
+}
+.name {
+	color: black;
+	position: absolute;
+	top: 57%;
+}
